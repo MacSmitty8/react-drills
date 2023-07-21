@@ -1,6 +1,7 @@
 import Objects from './Objects'
 import { useState } from 'react';
-
+import Arrays from './Arrays';
+import Form from './Form';
 
 function App() {
 
@@ -14,6 +15,14 @@ function App() {
     setCounter(counter - 1)
   }
 
+  const addByFive = () => {
+    setCounter(counter + 5)
+  }
+
+  const subtractByFive = () => {
+    setCounter(counter - 5)
+  }
+
   return (
     <div className="App">
       <h1>React Drills</h1>
@@ -21,6 +30,10 @@ function App() {
       <button onClick={handleIncrement}> + </button>
       <button onClick={handleDecrement}> - </button>
       <button onClick={() => {setCounter(0)}}>Reset</button>
+      <button onClick={addByFive}>+ 5</button>
+      <button onClick={subtractByFive}>- 5</button>
+      <h1>Form</h1>
+      <Form />
     </div>
   );
 }

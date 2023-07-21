@@ -7,7 +7,7 @@ function Objects() {
         email: 'something@hotmail.com'
     }
     //const{firstName, age, email} = zuko
-    
+
     return Object.keys(zuko).map((key, index)=>{
     return (
        <h2>
@@ -16,4 +16,4 @@ function Objects() {
     )
     })
 }
-export default Objects
+export default Objects;
